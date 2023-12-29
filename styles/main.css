@@ -7,6 +7,7 @@
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
+  background-color: #eee;
 }
 
 ul {
@@ -17,21 +18,22 @@ a {
   text-decoration: none;
 }
 
-#header {
+.header {
   display: flex;
 }
 
-#nav-bar {
+.nav-bar {
   position: fixed;
   top: 0px;
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(255, 255, 255);
+  background-color: #eee;
   overflow: hidden;
 }
-#container {
+
+.container {
   max-width: 960px;
   margin: 2rem auto 0;
   overflow: hidden;
@@ -40,12 +42,6 @@ a {
 .logo {
   width: 300px;
   cursor: pointer;
-}
-
-@media (min-width: 1200px) {
-  body {
-    background-color: rgb(255, 255, 255);
-  }
 }
 
 .btn {
@@ -86,7 +82,7 @@ a {
   margin-bottom: 1rem;
 }
 
-#features {
+.features {
   padding: 1rem;
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -94,38 +90,38 @@ a {
   flex-direction: column;
 }
 
-#features .feature {
+.features .feature {
   display: flex;
   justify-self: center;
   align-items: center;
 }
 
-#features .feature i {
+.features .feature i {
   color: #ff8c00;
 }
 
-#features .feature div {
+.features .feature div {
   padding: 1rem;
   margin-left: 3rem;
 }
 
-#features .feature div h2 {
+.features .feature div h2 {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }
 
-#how-it-work {
+.how-it-work {
   padding: 3rem;
   margin: auto;
   text-align: center;
 }
 
-#how-it-work #video {
+.how-it-work .video {
   width: 600px;
   height: 340px;
 }
 
-#pricing {
+.pricing {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -166,8 +162,7 @@ a {
   margin: 1rem;
 }
 
-/* FOOTER */
-#main-footer {
+.footer {
   background-color: #ccc;
   padding: 1rem 4rem;
   margin-top: 2rem;
@@ -176,54 +171,53 @@ a {
   overflow: hidden;
 }
 
-#main-footer div a {
+.footer div a {
   color: #333;
   padding: 0.5rem 1rem;
 }
 
-#fcs {
+.fcs {
   text-decoration: underline;
   color: #333;
 }
 
-/* TABLET AND SMARTPHONE */
 @media only screen and (max-width: 800px) {
-  #navbar {
+  .navbar {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 1.5rem 0.3rem;
   }
 
-  #navbar ul li {
+  .navbar ul li {
     padding: 1rem 1rem;
   }
 
-  #features .feature {
+  .features .feature {
     flex-direction: column;
   }
 
-  #features .feature div {
+  .features .feature div {
     padding: 1rem;
     margin: 0.5rem;
     text-align: center;
     margin-bottom: 2rem;
   }
 
-  #how-it-work {
+  .how-it-work {
     padding: 1rem;
   }
 
-  #how-it-work #video {
+  .how-it-work .video {
     width: 80%;
     height: 30%;
   }
 
-  #pricing {
+  .pricing {
     flex-direction: column;
   }
 
-  #pricing .price-box {
+  .pricing .price-box {
     margin: 1rem;
   }
 
@@ -235,14 +229,14 @@ a {
     margin-left: 0;
   }
 
-  #main-footer {
+  .footer {
     padding: 2.5rem 0.5rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  #main-footer .my-name {
+  .footer .my-name {
     margin: 1rem 0;
   }
 }
